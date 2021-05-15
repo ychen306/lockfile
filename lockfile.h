@@ -1,3 +1,6 @@
+#ifndef LOCK_FILE_H
+#define LOCK_FILE_H
+
 #include <fcntl.h>  // open
 #include <unistd.h> // close
 #include <sys/file.h> // flock
@@ -32,3 +35,5 @@ public:
     }
   }
 };
+
+#endif // end LOCK_FILE_H
